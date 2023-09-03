@@ -48,9 +48,18 @@
                     <a class="link-n" href="">Blog</a>
                 </div>
             </div>
-            <div class="loginbtn" onclick="clikeeff()">
+            <!-- <div class="loginbtn" onclick="clikeeff()">
                 <span class="material-symbols-outlined">login</span>
                 <span>LOGIN</span>
+            </div> -->
+            <div onmouseover="loginhover()" onmouseout="loginhout()" style=" cursor: pointer; width: 132px; fill: #153644;     margin-top: -10px;">
+                <svg id="loginstoke" class="loginstoke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.29 47">
+                    <path id="shape02" class="cls-1" d="M1.13,24l12-23h125l13,22-13,23h-125Z"/>
+                </svg>
+                <div  class="loginname">
+                    <span style="    margin-left: 5px;" class="material-symbols-outlined">login</span>
+                    <span style="    margin-left: 5px;">LOGIN</span>
+                </div>
             </div>
         </div>
     </section>
@@ -408,7 +417,6 @@
     <script>
         window.addEventListener("scroll", () => {
 
-
             if (window.pageYOffset > 100) {
 
                 document.getElementById('setnav').classList.add('schead_section')
@@ -434,6 +442,14 @@
         function loadpage() {
             document.getElementById('loading').style.display = "none";
             console.log('lakdsjf');
+        }
+        function loginhover() {
+            document.getElementById('loginstoke').style.strokeWidth= "3px";
+            document.getElementById('loginstoke').style.strokeDashoffset= "200";
+        }
+        function loginhout() {
+            document.getElementById('loginstoke').style.strokeWidth= "1px";
+            document.getElementById('loginstoke').style.strokeDashoffset= "20";
         }
     </script>
 

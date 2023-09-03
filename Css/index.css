@@ -233,6 +233,20 @@ body {
     z-index: -1;
     width: 100%;
 }
+.loginstoke{
+    stroke: #2ce4ff;
+    stroke-dasharray: 33, 33;
+    stroke-dashoffset: 82;
+    transition: 1s;
+}
+
+.loginname{
+    margin-top: -37px;
+    margin-left: 13px; 
+    display: flex; 
+    align-items: center; 
+    cursor: pointer;
+}
 
 .gamer-1 {
     width: 161px;
@@ -897,7 +911,25 @@ body {
     border-radius: 50%;
     border: 2px solid white;
     box-shadow: 0px 0px 7px 0px white;
+    /* animation: 3s ease-out 0s infinite lightblow; */
+    transition: 1s;
 }
+
+@keyframes lightblow {
+    0% {
+        box-shadow: 0px 0px 0px 0px white;
+       
+    }
+    54% {
+        box-shadow: 0px 0px 10px 5px white;
+        
+    }
+    100% {
+        box-shadow: 0px 0px 5px 2px white;
+       
+    }
+}
+
 .video-vs img{
     width: 62px;
 }
