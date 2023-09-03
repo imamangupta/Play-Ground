@@ -119,6 +119,35 @@ body {
 }
 
 
+.set-hover-link{
+    display: none;
+    position: fixed;
+    top: 45px;
+    padding-top: 50px;
+    transition: 1s;
+}
+.hover-submenu{
+   
+    background: #091222;
+    width: 225px;
+    border-radius: 5px;
+    padding: 20px 7px;
+    box-shadow: 0px 0px 7px 0px #355982;
+    transition: 1s;
+}
+.hover-submenu div{
+    padding: 5px;
+    font-size: 20px;
+}
+.hover-submenu div a{
+    color: white;
+    text-decoration: none;
+    transition: 300ms;
+}
+.hover-submenu div a:hover{
+    color: rgb(32, 185, 255);
+}
+
 .link-section {
     display: flex;
     padding: 10px;
@@ -194,24 +223,6 @@ body {
 .link-n:hover {
     color: rgb(42, 255, 227);
     transition: 0.5ms;
-}
-
-.loginbtn {
-    text-align: center;
-    background: #0072ff52;
-    display: flex;
-    padding: 7px 13px 9px 9px;
-    border-radius: 5px;
-    align-items: center;
-    font-size: 19px;
-    border: 0px solid #007eff;
-    cursor: pointer;
-    transition: 500ms;
-}
-
-.loginbtn:hover {
-    box-shadow: 0px 0px 10px 0px white;
-    /* animation: shake .8s ease-in; */
 }
 
 

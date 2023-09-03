@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/About.css">
+    <link rel="shortcut icon" href="Img/trylogo2.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title>Play Ground | About Us</title>
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header  -->
+    <section>
+        <div class="head_section" id="setnav">
+            <div>
+                <img class="web-logo" src="Img/trylogo2.png" alt="">
+            </div>
+            <div class="link-section">
+                <div class="link-uper-case">
+                    <a class="link-n" href="index.html">Home</a>
+                </div>
+                <div class="link-uper-case">
+                    <a class="link-n-active" href="About.html">About</a>
+                </div>
+                <div class="link-uper-case">
+                    <a onmouseover="tornamentlink()" onmouseleave="tornamentout()" class="link-n" href="">Tornament</a>
+                    <div onmouseleave="tornamentout()" onmouseover="tornamentlink()" id="tornamenthover"
+                    class="set-hover-link">
+                        <div class="hover-submenu">
+
+                            <div>
+                                <a href="">Upcoming </a>
+                            </div>
+                            <div>
+                                <a href="">Present</a>
+                            </div>
+                            <div>
+                                <a href="">Last</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="link-uper-case">
+                    <a class="link-n" href="">News</a>
+                </div>
+                <div class="link-uper-case">
+                    <a onmouseover="gamehoverlink()" onmouseleave="gamehoverout()"  class="link-n" href="">Game</a>
+                    <div onmouseleave="gamehoverout()" onmouseover="gamehoverlink()" id="gamehover"
+                    class="set-hover-link">
+                        <div class="hover-submenu">
+
+                            <div>
+                                <a href="">Valorant </a>
+                            </div>
+                            <div>
+                                <a href="">Pubg</a>
+                            </div>
+                            <div>
+                                <a href="">Free Fire</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="link-uper-case">
+                    <a class="link-n" href="">Blog</a>
+                </div>
+            </div>
+            <a href="Login.html" style="text-decoration: none;  color: white;">
+                <div onmouseover="loginhover()" onclick="clikeeff()" onmouseout="loginhout()"
+                    style=" cursor: pointer; width: 132px; fill: #153644;     margin-top: -10px;">
+                    <svg id="loginstoke" class="loginstoke" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152.29 47">
+                        <path id="shape02" class="cls-1" d="M1.13,24l12-23h125l13,22-13,23h-125Z" />
+                    </svg>
+                    <div class="loginname">
+                        <span style="    margin-left: 5px;" class="material-symbols-outlined">login</span>
+                        <span style="    margin-left: 5px;">LOGIN</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </section>
+
+    <section>
+        <br>
+        <br>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+    </section>
+
+
+
+
+
+
+    <script>
+        window.addEventListener("scroll", () => {
+
+            if (window.pageYOffset > 100) {
+
+                document.getElementById('setnav').classList.add('schead_section')
+                document.getElementById('setnav').classList.remove('head_section')
+
+
+            } else {
+                document.getElementById('setnav').classList.remove('schead_section')
+                document.getElementById('setnav').classList.add('head_section')
+            }
+        })
+
+        function loginhover() {
+            document.getElementById('loginstoke').style.strokeWidth = "3px";
+            document.getElementById('loginstoke').style.strokeDashoffset = "200";
+        }
+        function loginhout() {
+            document.getElementById('loginstoke').style.strokeWidth = "1px";
+            document.getElementById('loginstoke').style.strokeDashoffset = "20";
+        }
+
+        function tornamentlink() {
+            document.getElementById('tornamenthover').style.display = "block";
+        }
+        function tornamentout() {
+            document.getElementById('tornamenthover').style.display = "none";
+        }
+
+        function gamehoverlink() {
+            document.getElementById('gamehover').style.display = "block";
+        }
+        function gamehoverout() {
+            document.getElementById('gamehover').style.display = "none";
+        }
+    </script>
+
+
+</body>
+
+</html>
