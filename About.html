@@ -12,7 +12,17 @@
     <title>Document</title>
 </head>
 
-<body>
+<body onload="loadpage()">
+    <audio src="sound/mouse-click-153941.mp3" id="myAudio"></audio>
+
+    <div id="loading" class="loaderpage">
+        loadpage....
+    </div>
+
+    <div class="cursor">
+        <div></div>
+    </div>
+
     <!-- Header  -->
     <section>
         <div class="head_section" id="setnav">
@@ -29,7 +39,7 @@
                 <div class="link-uper-case">
                     <a onmouseover="tornamentlink()" onmouseleave="tornamentout()" class="link-n" href="">Tornament</a>
                     <div onmouseleave="tornamentout()" onmouseover="tornamentlink()" id="tornamenthover"
-                    class="set-hover-link">
+                        class="set-hover-link">
                         <div class="hover-submenu">
 
                             <div>
@@ -48,9 +58,9 @@
                     <a class="link-n" href="">News</a>
                 </div>
                 <div class="link-uper-case">
-                    <a onmouseover="gamehoverlink()" onmouseleave="gamehoverout()"  class="link-n" href="">Game</a>
+                    <a onmouseover="gamehoverlink()" onmouseleave="gamehoverout()" class="link-n" href="">Game</a>
                     <div onmouseleave="gamehoverout()" onmouseover="gamehoverlink()" id="gamehover"
-                    class="set-hover-link">
+                        class="set-hover-link">
                         <div class="hover-submenu">
 
                             <div>
@@ -86,44 +96,94 @@
 
     </section>
 
-    <section>
-       
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
 
+
+
+    <section>
+
+        <div class="aboutbackground">
+            <div>
+                <h2>About Us</h2>
+            </div>
+            <div>
+
+            </div>
+        </div>
     </section>
+
+
+
+    <!-- About section  -->
+    <section class="home-about-cont">
+        <div class="home-about-left">
+
+            <div style="margin-top: 55px;">
+                <div>
+                    <h1 class="h-a-tag-line">THE JOURNEY OF THE GAMING SITES</h1>
+                    <div class="design-line"></div>
+                </div>
+                <div class="h-a-tag-line-para">
+                    <p>Gorem npsum dolor sit amet consectetur adipiscing elit. Duis elementum sollici tudin augue
+                        euismod. Nulla ullamcorper nunc. Morbi pharetra mi tellus mollis tincidunt massa venenatis.
+                        Etiam lacinia ipsumultrices.</p>
+                </div>
+            </div>
+
+            <div class="home-about-count">
+                <div class="home-about-count-set">
+                    <div>
+                        <span style="font-size: 43px;">40k</span>
+                    </div>
+                    <div>
+                        <span style="font-size: 15px">Member</span>
+                    </div>
+                </div>
+                <div class="home-about-count-set">
+                    <div>
+                        <span style="font-size: 43px;">12k</span>
+                    </div>
+                    <div>
+                        <span style="font-size: 15px">NFT</span>
+                    </div>
+                </div>
+                <div class="home-about-count-set">
+                    <div>
+                        <span style="font-size: 43px;">30k</span>
+                    </div>
+                    <div>
+                        <span style="font-size: 15px">Artist</span>
+                    </div>
+                </div>
+
+            </div>
+            <div style="display: flex; margin-top: 20px;">
+                <div>
+                    <button class="aboutbtnset" onclick="clikeeff()">Read More</button>
+
+                </div>
+                <div class="videoaboutbtn">
+                    <span style="font-size: 39px;" class="playvideobtn material-symbols-outlined ">play_circle</span>
+                    <span style="font-size: 16px;">How it Work</span>
+                </div>
+            </div>
+            <div class="rotaed">
+                <div class="r-circle-inner">
+                    <div class="r-c-circle">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home-about-right">
+            <div class="h-a-img-set">
+
+                <div class="set_img_duckgo">
+                    <img src="Img/duck_go.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
 
     <section>
@@ -136,7 +196,8 @@
                         <h3 style=" padding: 10px; color: white;">Play Ground</h3>
                     </div>
                     <div style="color: #9d9d9d; margin: 24px 0px;">
-                        <p>Strong emotions such as passion and bliss are indications that you're connected to Spirit, or 'inspired,' if you will.
+                        <p>Strong emotions such as passion and bliss are indications that you're connected to Spirit, or
+                            'inspired,' if you will.
                         </p>
                     </div>
                     <div style="    color: #43ff8b;">
@@ -207,6 +268,13 @@
 
 
     <script>
+        function loadpage() {
+            document.getElementById('loading').style.display = "none";
+        }
+        var cursor = document.querySelector(".cursor");
+        document.addEventListener('mousemove', function (en) {
+            cursor.style.cssText = "left:" + en.clientX + "px; top:" + en.clientY + "px;";
+        });
         window.addEventListener("scroll", () => {
 
             if (window.pageYOffset > 100) {
