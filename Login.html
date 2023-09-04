@@ -1,1 +1,63 @@
-asdfasdf
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/Login.css">
+    <link rel="shortcut icon" href="Img/trylogo2.png" type="image/x-icon">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Play Ground | Login</title>
+</head>
+
+<body>
+
+    <div>
+        <video width="100%" class="homebackgrounvideo" autoplay muted loop>
+            <source src="Video/loginvideo.mp4" type="video/mp4">
+        </video>
+    </div>
+    <a href="index.html">
+        <div class='setloginback'>
+            <span style="color: white; font-size: 50px; cursor: pointer;"
+                class="material-symbols-outlined">arrow_circle_up </span>
+        </div>
+    </a>
+
+    <section class="l-section">
+        <div class="l-form-box">
+            <div class="l-form-value">
+                <form>
+                    <h2 class="l-h2">Login</h2>
+                    <div class="l-inputbox">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <input id="email" type='text' name="email" />
+                        <label for="">Email</label>
+                    </div>
+                    <div class="l-inputbox">
+                        <ion-icon name="lock-closed-outline"></ion-icon>
+                        <input id="password" type='password' name="password" />
+                        <label for="">Password</label>
+                    </div>
+                    <div class="l-forget">
+                        <label for=""><a href="#">Forget Password</a></label>
+                    </div>
+                    <button type="submit" class="l-button">Log in</button>
+                    <div class="l-register">
+                        <p>Don't have a account
+                            <a href="/Register">Register</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
