@@ -53,6 +53,53 @@ body {
     height: 100vh;
     background: black;
 }
+
+.ring {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation: ring 2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+        box-shadow: 1px 5px 2px #e65c00;
+    }
+
+    50% {
+        transform: rotate(180deg);
+        box-shadow: 1px 5px 2px #18b218;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        box-shadow: 1px 5px 2px #0456c8;
+    }
+}
+
+.ring::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgba(255, 255, 255, .3);
+}
+
+.loaderword {
+    font-family: 'Rubik', sans-serif;
+    color: #737373;
+    font-size: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 200px;
+
+}
+
 .head_section {
     display: flex;
     background: #00000000;
@@ -226,6 +273,25 @@ body {
     transition: 0.5ms;
 }
 
+.buger-line {
+    display: none;
+    position: fixed;
+    top: 17px;
+    right: 23px;
+    background: #384864;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+.b-line {
+    height: 5px;
+    width: 27px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 3px 2px;
+}
+
 
 .backimg-home {
     width: 100%;
@@ -322,6 +388,16 @@ body {
     }
 }
 
+
+
+@media (max-width: 1000px) {
+    
+}
+
+
+
+
+
 .cursor {
     position: fixed;
     width: 10px;
@@ -383,6 +459,19 @@ body {
     text-align: center;
     font-size: 20px;
 }
+.hometagline {
+    text-shadow: 0px 0px 10px white;
+    font-size: 117px;
+    font-family: gamefont;
+    color: #ffffff;
+    animation: 1s ease-out 0s 1 parast;
+   
+}
+
+
+
+
+
 
 .h-a-tag-line-para {
     margin: 25px 0px;
@@ -459,15 +548,7 @@ body {
     src: url(/font/Plaguard-ZVnjx.otf);
 }
 
-.hometagline {
-    text-shadow: 0px 0px 10px white;
-    font-size: 117px;
-    font-family: gamefont;
-    color: #ffffff;
-    animation: 1s ease-out 0s 1 parast;
-    /* text-shadow: 0px 0px 0px red; */
-    /* animation: 5s ease-out 0s stremglow; */
-}
+
 
 @keyframes stremglow {
     0% {
@@ -1023,4 +1104,360 @@ body {
 }
 .matchtime:hover{
     border: 4px solid #0eff36;
+}
+
+
+
+.footer-inner {
+    display: flex;
+    width: 1200px;
+}
+
+.f-f-c {
+    width: 30%;
+}
+
+.f-s-c {
+    width: 20%;
+    padding: 20px;
+}
+
+.f-t-c {
+    width: 20%;
+    padding: 20px;
+}
+
+.f-four-c {
+    width: 30%;
+    padding: 20px;
+}
+
+.developertag {
+    text-decoration: none;
+    color: lime;
+    transition: 400ms;
+}
+
+.developertag:hover {
+    color: rgb(0, 133, 0);
+}
+.matchstarted{
+    text-align: center;
+    margin-top: -1108px;   
+    color: white;
+}
+.upcoming-matchs{
+    margin-bottom: 150px;    
+    margin-top: -300px;    
+    position: relative;
+}
+.u-c-match{
+    display: flex;  
+    width: 740px; 
+    justify-content: center;
+}
+
+@media (max-width: 1350px) {
+    .rod-video-3 {
+        width: 5px;
+        margin-right: 31px;
+    }
+    .rod-video-cont {
+        margin-top: -722px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1350px) {
+    .rod-video-cont {
+        margin-top: -670px;
+        position: relative;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1230px) {
+    .rod-video-cont {
+        margin-top: -624px;
+    }
+}
+
+
+
+@media (max-width: 1250px) {
+    .matchview {
+        width: 85%;
+    }
+    
+    .u-c-match{
+        width: 60%; 
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .home-about-cont {
+        padding: 0px 20px;
+    }
+
+    .home-about-left {
+        width: 50%;
+    }
+
+    .home-about-right {
+        width: 50%;
+    }
+    .img-scord-team {
+        margin-top: -550px;
+    }
+    .footer-inner {
+        display: flex;
+        width: 100%;
+        padding: 10px
+    }
+}
+
+
+
+@media (max-width: 1150px) {
+    .rod-video-cont {
+        margin-top: -592px;
+    }
+}
+
+
+@media (max-width: 1150px) {
+    .gamer-3 {
+        width: 166px;
+        animation: 1s ease-out 0s 1 imganimation4;
+    }
+    .gamer-4 {
+        width: 328px;
+        animation: 2s ease-out 0s 1 imganimation3;
+    }
+    .gamer-2 {
+        width: 327px;
+        animation: 2s ease-out 0s 1 imganimation3;
+    }
+    .gamer-1 {
+        width: 151px;
+        animation: 1s ease-out 0s 1 imganimation;
+    }
+    .img-scord-team {
+        margin-top: -523px;
+    }
+    .home-head-show {
+       
+        margin-top: -393px;
+    }
+    .hometagline {
+        text-shadow: 0px 0px 10px white;
+        font-size: 100px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .rod-video-cont {
+        margin-top: -520px;
+    }
+    .matchstarted {
+        text-align: center;
+        margin-top: -1191px;
+        color: white;
+    }
+}
+
+
+@media (max-width: 1050px) {
+    .homebackgrounvideo{
+        display: none;
+    }
+    .img-scord-team {
+        margin-top: 118px;
+    }
+    .hometagline {
+        text-shadow: 0px 0px 10px white;
+        font-size: 97px;
+    }
+}
+
+
+
+
+@media (max-width: 1000px) {
+    /* .matchicon {
+        width: 85px;
+        height: 85px;
+    
+    }
+    .matchicon img {
+        width: 58px;
+    }
+    .u-c-match {
+        width: 56%;
+    } */
+    .matchview {
+        width: 96%;
+    }
+    .matchicon {
+        width: 90px;
+        height: 90px;
+    }
+    .u-c-match {
+        width: 62%;
+    }    
+
+
+    .resetstream {
+        font-size: 83px;
+        margin-top: -83px;
+        color: white;
+        text-shadow: 0px 0px 15px white;
+        font-family: 'gamefont';
+        margin-left: 74px;
+        cursor: context-menu;
+    }
+    .gamer-3 {
+        display: none;
+     }
+    
+     .gamer-1 {
+        display: none;
+     }
+    .head_section {
+        height: 76px;
+        overflow: hidden;
+        background: #091222;
+        display: block;
+    }
+
+    .schead_section {
+        height: 76px;
+        overflow: hidden;
+        background: #091222;
+        display: block;
+    }
+
+    .new-nav-height {
+        padding: 15px;
+        background: #091222;
+        height: 100vh;
+        transition: 2s;
+    }
+
+    .link-section {
+        display: block;
+    }
+
+    .link-n-active::before {
+        display: none;
+    }
+
+    .buger-line {
+        display: block;
+    }
+
+    .link-uper-case {
+        padding: 10px;
+    }
+
+    .web-logo {
+        margin-left: 5px;
+    }
+    .footer-inner {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .f-f-c {
+        width: 50%;
+    }
+
+    .f-s-c {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .f-t-c {
+        width: 50%;
+        padding: 20px;
+    }
+
+    .f-four-c {
+        width: 50%;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 900px) {
+    .rod-video-1{
+        display: none;
+    }
+    .resetstream{
+        display: none;
+    }
+    .matchstarted {
+        text-align: center;
+        margin-top: 80px;
+        color: white;
+    }
+    .rod-video-2{
+        display: none;
+    }
+    .rod-video-3{
+        display: none;
+    }
+    .upcoming-matchs {
+        margin-bottom: 150px;
+        margin-top: 0px;
+        position: relative;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .home-about-left {
+        width: 100%;
+    }
+
+    .home-about-right {
+        display: none;
+    }
+    .h-a-tag-line {
+        font-size: 46px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+    .footer-inner {
+        display: flex;
+        width: 100%;
+        padding: 30px;
+        flex-wrap: wrap;
+    }
+
+    .f-f-c {
+        width: 100%;
+    }
+
+    .f-s-c {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .f-t-c {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .f-four-c {
+        width: 100%;
+        padding: 20px;
+    }
 }

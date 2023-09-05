@@ -15,7 +15,8 @@
     <audio src="sound/mouse-click-153941.mp3" id="myAudio"></audio>
 
     <div id="loading" class="loaderpage">
-        loadpage....
+        <div class="ring"></div>
+        <span class="loaderword">loading...</span>
     </div>
 
     <div class="cursor">
@@ -53,29 +54,28 @@
                     </div>
                 </div>
                 <div class="link-uper-case">
-                    <a class="link-n" href="">News</a>
+                    <a class="link-n" href="News.html">News</a>
                 </div>
                 <div class="link-uper-case">
-                    <a onmouseover="gamehoverlink()" onmouseleave="gamehoverout()" class="link-n" href="">Game</a>
+                    <a onmouseover="gamehoverlink()" onmouseleave="gamehoverout()" class="link-n" href="Game.html">Game</a>
                     <div onmouseleave="gamehoverout()" onmouseover="gamehoverlink()" id="gamehover"
                         class="set-hover-link">
                         <div class="hover-submenu">
 
                             <div>
-                                <a href="">Valorant </a>
+                                <a href="Game.html">Valorant </a>
                             </div>
                             <div>
-                                <a href="">Pubg</a>
+                                <a href="Game.html">Pubg</a>
                             </div>
                             <div>
-                                <a href="">Free Fire</a>
+                                <a href="Game.html">Free Fire</a>
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <div class="link-uper-case">
-                    <a class="link-n" href="">Blog</a>
+                    <a class="link-n" href="Blog.html">Blog</a>
                 </div>
             </div>
             <a href="Login.html" style="text-decoration: none; color: white;">
@@ -90,6 +90,12 @@
                     </div>
                 </div>
             </a>
+            <div class="buger-line" onclick="headerfull()">
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+                <div class="b-line"></div>
+            </div>
 
         </div>
     </section>
@@ -110,14 +116,13 @@
         </div>
         <div class="home-head-show">
             <div class="loadline"></div>
-            <h1 class="hometagline ">STEAMING</h1>
+            <h1 class="hometagline">STEAMING</h1>
             <div class="streampara paraentani">VIDEO GAMES ONLINE</div>
             <div class="container paraentani" style="margin-bottom: 7px;">
                 <div class="btn"><a href="#videostream" onclick="clikeeff()">Watch Now</a></div>
             </div>
             <div class="loadline"></div>
         </div>
-
     </section>
 
 
@@ -262,7 +267,7 @@
                 <div class="resetstream">STEAMING....</div>
                 <div class="rod-video-2"></div>
 
-                <div style="    text-align: center;   margin-top: -1108px;   color: white;">
+                <div class="matchstarted">
                     <div style="    font-size: 75px;                    font-family: 'gamefont';">
                         PREMIER LEAGUE
                     </div>
@@ -321,15 +326,18 @@
     </section>
 
 
-    <section style="       margin-bottom: 150px;    margin-top: -300px;    position: relative;">
 
 
 
 
+
+
+
+    <section class="upcoming-matchs">
         <div>
-
             <div style="margin: 70px 0px;">
-                <div style="    display: flex;            justify-content: center;">
+
+                <div style="display: flex; justify-content: center;">
                     <svg class="matchview" xmlns="http://www.w3.org/2000/svg" width="1112" height="150"
                         viewBox="0 0 1112 150">
                         <path id="match-svg" class="cls-1"
@@ -338,24 +346,14 @@
                     </svg>
                 </div>
 
-
-                <div style="       display: flex;
-                justify-content: center;
-                margin-top: -122px;">
-
+                <div style="display: flex; justify-content: center; margin-top: -122px;">
                     <div class="matchicon">
                         <img src="Img/team_vs02.png" alt="">
                     </div>
-                    <div style="    display: flex;
-                    width: 740px;
-                    justify-content: center;">
+                    <div class="u-c-match">
                         <div style="padding: 20px;">
-                            <p style="    direction: rtl;
-                            font-weight: bold;
-                            color: #18ff18;">PUBG PC</p>
-                            <div style="    font-size: 30px;
-                        font-weight: 700;
-                        color: white;">KILLER 7</div>
+                            <p style="direction: rtl;  font-weight: bold;   color: #18ff18;">PUBG PC</p>
+                            <div style="font-size: 30px;  font-weight: 700;   color: white;">KILLER 7</div>
                         </div>
                         <div class="matchtime">
                             <div>
@@ -363,19 +361,14 @@
                             </div>
                         </div>
                         <div style="padding: 20px;">
-                            <p style=" font-weight: bold;
-                            color: #18ff18;">PUBG PC</p>
-                            <div style="    font-size: 30px;
-                        font-weight: 700;
-                        color: white;">BLACK MX</div>
+                            <p style=" font-weight: bold; color: #18ff18;">PUBG PC</p>
+                            <div style="    font-size: 30px; font-weight: 700; color: white;">BLACK MX</div>
                         </div>
                     </div>
                     <div class="matchicon">
                         <img src="Img/team_vs03.png" alt="">
                     </div>
-
                 </div>
-
             </div>
 
             <div style="margin: 70px 0px;">
@@ -396,9 +389,7 @@
                     <div class="matchicon">
                         <img src="Img/team_vs04.png" alt="">
                     </div>
-                    <div style="    display: flex;
-                    width: 740px;
-                    justify-content: center;">
+                    <div class="u-c-match">
                         <div style="padding: 20px;">
                             <p style="    direction: rtl;
                             font-weight: bold;
@@ -446,9 +437,7 @@
                     <div class="matchicon">
                         <img src="Img/team_vs06.png" alt="">
                     </div>
-                    <div style="    display: flex;
-                    width: 740px;
-                    justify-content: center;">
+                    <div class="u-c-match">
                         <div style="padding: 20px;">
                             <p style="    direction: rtl;
                             font-weight: bold;
@@ -483,11 +472,13 @@
     </section>
 
 
+
+
     <section>
         <footer class="footer-container">
-            <div style="    display: flex;   width: 1200px;">
+            <div class="footer-inner">
 
-                <div style="    width: 30%;">
+                <div class="f-f-c">
                     <div style="display: flex; align-items: center; margin-top: 20px;">
                         <img style="width: 70px;" src="Img/trylogo2.png" alt="">
                         <h3 style=" padding: 10px; color: white;">Play Ground</h3>
@@ -508,7 +499,7 @@
                     </div>
                 </div>
 
-                <div style="    width: 20%;      padding: 20px;">
+                <div class="f-s-c" >
                     <div style="color: white;">
                         <h2>Quick Link</h2>
                     </div>
@@ -522,7 +513,7 @@
                     </div>
                 </div>
 
-                <div style="    width: 20%;      padding: 20px;">
+                <div class="f-t-c">
                     <div style="color: white;">
                         <h2>SUPPORTS</h2>
                     </div>
@@ -536,7 +527,7 @@
                     </div>
                 </div>
 
-                <div style="    width: 30%;  padding: 20px;">
+                <div class="f-four-c">
                     <div style="color: white;">
                         <h2>NEWSLETTER</h2>
                     </div>
@@ -565,6 +556,16 @@
     <script src="second.js"></script>
 
     <script>
+        function headerfull() {
+            let navclass = document.getElementById('setnav');
+            if (navclass.classList.contains('new-nav-height')) {
+                console.log('alkdsfjlk');
+                navclass.classList.add('head_section')
+                navclass.classList.remove('new-nav-height')
+            }else{
+                navclass.classList.add('new-nav-height')
+            }
+        }
         window.addEventListener("scroll", () => {
 
             if (window.pageYOffset > 100) {
