@@ -13,7 +13,10 @@
     <title>Play Ground | Login</title>
 </head>
 
-<body>
+<body onload="loadpage()">
+    <div id="loading" class="loaderpage">
+        loadpage....
+    </div>
 
     <div>
         <video width="100%" class="homebackgrounvideo" autoplay muted loop>
@@ -58,6 +61,11 @@
 
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        function loadpage() {
+            document.getElementById('loading').style.display = "none";
+        }
+    </script>
 </body>
 
 </html>
