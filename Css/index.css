@@ -200,6 +200,12 @@ body {
     display: flex;
     padding: 10px;
 }
+.login-btn-position-set{
+    cursor: pointer; 
+    width: 132px; 
+    fill: #153644;     
+    margin-top: -10px;
+}
 
 .link-n {
     color: white;
@@ -1179,8 +1185,9 @@ body {
 .video-match-time{
     display: flex;                    
     justify-content: center;    
-     margin: 40px 10px;
+    margin: 40px 10px;
 }
+
 @media (max-width: 1350px) {
     .rod-video-3 {
         width: 5px;
@@ -1547,6 +1554,19 @@ body {
 }
 
 @media (max-width:450px) {
+    .home-head-show {
+       
+        margin-bottom: 245px;
+    }
+    .matchstarted {
+       
+        margin-top: 40px;
+    }
+    .login-btn-position-set{
+         
+        margin-top: 0px;
+        margin-left: 42px;
+    }
     .video-match-time{
         display: flex;
     justify-content: center;
