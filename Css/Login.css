@@ -96,6 +96,11 @@ body {
     line-height: 200px;
 
 }
+.homebackgrounvideo{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
 
 .setloginback{
     z-index: 1;

@@ -1156,7 +1156,31 @@ body {
     width: 740px; 
     justify-content: center;
 }
+.streaming-video-section{
+    clip-path: polygon(-34% -100%, 200% 100%, 14% 100%, 0% 81%);
+    width: 100%;
+}
+.match-shedual-time{
+    display: flex; 
+    justify-content: center; 
+    margin-top: -122px;
+}
 
+.m-s-t-d{
+    padding: 20px;
+}
+.vs-match{
+    padding: 25px;   
+    display: flex;     
+    align-items: center;      
+    font-size: 20px;
+    display: none;
+}
+.video-match-time{
+    display: flex;                    
+    justify-content: center;    
+     margin: 40px 10px;
+}
 @media (max-width: 1350px) {
     .rod-video-3 {
         width: 5px;
@@ -1245,9 +1269,9 @@ body {
         width: 151px;
         animation: 1s ease-out 0s 1 imganimation;
     }
-    .img-scord-team {
+   .img-scord-team {
         margin-top: -523px;
-    }
+    } 
     .home-head-show {
        
         margin-top: -393px;
@@ -1272,14 +1296,28 @@ body {
 
 @media (max-width: 1050px) {
     .homebackgrounvideo{
-        display: none;
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
     }
-    .img-scord-team {
-        margin-top: 118px;
+   
+   .img-scord-team {
+        margin-top: -523px;
     }
     .hometagline {
         text-shadow: 0px 0px 10px white;
         font-size: 97px;
+    }
+    .streaming-video-section{
+        height: 100vh;
+        object-fit: cover;
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
@@ -1287,17 +1325,25 @@ body {
 
 
 @media (max-width: 1000px) {
-    /* .matchicon {
-        width: 85px;
-        height: 85px;
+    .char-holder {
+        width: 80%;
     
     }
-    .matchicon img {
-        width: 58px;
+    .gamer-2 {
+        display: none;
     }
-    .u-c-match {
-        width: 56%;
-    } */
+    .stemer-img-container {
+        margin-top: 35px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        width: 100%;
+        
+    }
     .matchview {
         width: 96%;
     }
@@ -1435,6 +1481,44 @@ body {
 
 
 @media (max-width: 600px) {
+    .matchstarted {
+        text-align: center;
+        margin-top: -29px;
+        color: white;
+    }
+    .m-s-t-d {
+        padding: 5px;
+    }
+    .match-shedual-time{
+        
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    background: #282935;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 7px;
+    flex-direction: row;
+    align-items: center;
+
+    }
+    .matchview {
+        width: 96%;
+        display: none;
+    }
+    .matchtime {
+        display: none;
+    }
+    .hometagline {
+        text-shadow: 0px 0px 10px white;
+        font-size: 85px;
+    }
+    .rotaed {
+        direction: rtl;
+        margin-top: -150px;
+        width: 82%;
+        display: none;
+    }
     .footer-inner {
         display: flex;
         width: 100%;
@@ -1459,5 +1543,48 @@ body {
     .f-four-c {
         width: 100%;
         padding: 20px;
+    }
+}
+
+@media (max-width:450px) {
+    .video-match-time{
+        display: flex;
+    justify-content: center;
+    margin: 40px 10px;
+    flex-direction: column;
+    align-items: center;
+    }
+    .m-s-t-d {
+        
+        display: none;
+    }
+    .vs-match {
+        display: block;
+        font-size: 30px;
+        color: white;
+        font-family: 'gamefont';
+    }
+    .u-c-match {
+        width: 30%;
+    }
+    .match-shedual-time {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        background: #282935;
+        padding: 11px;
+        margin: 12px;
+    }
+    .hometagline {
+        text-shadow: 0px 0px 10px white;
+        font-size: 60px;
+    }
+    .contant-line-head {
+        font-size: 32px;
+        color: white;
+        margin-bottom: 10px;
+    }
+    .rod-video-cont {
+        margin-top: -685px;
     }
 }
